@@ -1,0 +1,36 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Naimish Shah", email = "naimishshah8@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.13.3",
+    "asyncpg>=0.30.0",
+    "beautifulsoup4>=4.12.3",
+    "fastapi>=0.115.0",
+    "httpx>=0.27.0",
+    "langchain-core>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langgraph>=0.2.60",
+    "lxml>=5.0.0",
+    "pgvector>=0.3.6",
+    "pydantic>=2.9.0",
+    "pydantic-settings>=2.3.4",
+    "redis>=5.2.0",
+    "sqlalchemy[asyncio]>=2.0.35",
+    "sse-starlette>=2.1.0",
+    "tavily-python>=0.5.0",
+    "tiktoken>=0.7.0",
+    "uvicorn[standard]>=0.32.0",
+]
+
+[project.scripts]
+api = "api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
